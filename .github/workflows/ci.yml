@@ -13,6 +13,8 @@ jobs:
   build-and-test:
     name: Build and test
     runs-on: ubuntu-latest
+    env:
+      BUILD_CONFIGURATION: Release
     
     steps:
     - name: Checkout
@@ -24,6 +26,6 @@ jobs:
     - name: .NET restore
       run: dotnet restore
     - name: .NET build
-      run: dotnet build --no-restore --configuration Release
+      run: dotnet build --no-restore --configuration $BUILD_CONFIGURATION
     - name: .NET test
-      run: dotnet test --no-build --configuration Release
+      run: dotnet test --no-build --configuration $BUILD_CONFIGURATION
