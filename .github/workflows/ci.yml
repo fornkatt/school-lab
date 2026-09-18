@@ -1,4 +1,4 @@
-name: CI
+name: CI   
 
 on: 
   push:
@@ -15,6 +15,12 @@ jobs:
     runs-on: ubuntu-latest
     env:
       BUILD_CONFIGURATION: Debug
+      STARTED_BY: ${{ github.actor }}
+      ACTION: ${{ github.action }}
+      BRANCH: ${{ github.ref_name }}
+
+      run: |
+        echo "echo "Startad av $STARTED_BY — händelse: $ACTION — gren: $BRANCH""
     
     steps:
     - name: Checkout
