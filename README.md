@@ -10,3 +10,5 @@ Repot innehåller:
 
 Kör `dotnet test`. `Common.Tests` ska vara grönt, `Y2021Day01.Tests` ska vara rött.
 Börja där
+
+![CI](https://github.com/fornkatt/school-lab/actions/workflows/ci.yml/badge.svg)
