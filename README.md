@@ -9,4 +9,4 @@ Repot innehåller:
   `Program.cs`, en tom `Sonar.cs` och ett första test som är rött med flit.
 
 Kör `dotnet test`. `Common.Tests` ska vara grönt, `Y2021Day01.Tests` ska vara rött.
-Börja där.
+Börja där
