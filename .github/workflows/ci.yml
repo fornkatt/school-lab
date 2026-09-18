@@ -20,7 +20,7 @@ jobs:
       BRANCH: ${{ github.ref }}
 
       run: |
-        echo "Startad av $STARTED_BY — händelse: $ACTION — gren: $BRANCH"
+        echo "Startad av ${{ github.actor }} — händelse: ${{ github.action }} — gren: ${{ github.ref }}"
     
     steps:
     - name: Checkout
