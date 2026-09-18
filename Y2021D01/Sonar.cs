@@ -4,7 +4,7 @@ public class Sonar
 {
     public int CountIncreases(int[] depths)
     {
-        int increases = 0;
+        
 
         for (int i = 1; i < depths.Length; i++)
         {
