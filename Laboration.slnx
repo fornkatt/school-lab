@@ -1,0 +1,10 @@
+<Solution>
+  <Project Path="Common.Tests/Common.Tests.csproj" />
+  <Project Path="Common/Common.csproj" />
+  <Project Path="Y2015D01.Tests/Y2015D01.Tests.csproj" />
+  <Project Path="Y2015D01/Y2015D01.csproj" />
+  <Project Path="Y2015D10.Tests/Y2015D10.Tests.csproj" />
+  <Project Path="Y2015D10/Y2015D10.csproj" />
+  <Project Path="Y2021D01.Tests/Y2021D01.Tests.csproj" />
+  <Project Path="Y2021D01/Y2021D01.csproj" />
+</Solution>
