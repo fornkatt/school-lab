@@ -20,7 +20,7 @@ jobs:
     - name: Who started this and why?
       env:
           STARTED_BY: ${{ github.actor }}
-          ACTION: ${{ github.action }}
+          ACTION: ${{ github.event_name }}
           BRANCH: ${{ github.ref_name }}
       run: |
         echo "Startad av $STARTED_BY — händelse: $ACTION — gren: $BRANCH"
